@@ -58,7 +58,9 @@ const Page: NextPage = () => {
             }
           >
             {dropDownOptions?.map((item, index) => (
-              <option value={item}>{item}</option>
+              <option key={index} value={item}>
+                {item}
+              </option>
             ))}
           </select>
         </div>
@@ -73,7 +75,9 @@ const Page: NextPage = () => {
             }
           >
             {dropDownOptions?.map((item, index) => (
-              <option value={item}>{item}</option>
+              <option key={index} value={item}>
+                {item}
+              </option>
             ))}
           </select>
         </div>
